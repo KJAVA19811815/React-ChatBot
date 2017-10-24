@@ -7,14 +7,31 @@ class App extends Component {
     const steps = [
       {
         id: "0",
-        message: "Welcome to react chatbot",
+        message: "Who is the king of tennis?",
         trigger: "1"
       },
       {
         id: "1",
-        message:
-          "My name is Roger and I am the greatest tennis player of all time",
-        trigger: "2"
+        options: [
+          { value: 1, label: "Is it Nadal", trigger: "nadal" },
+          { value: 2, label: "Is it Djokovic", trigger: "djokovic" },
+          { value: 3, label: "Is it Federer", trigger: "federer" }
+        ]
+      },
+      {
+        id: "nadal",
+        message: "Wrong....Try again",
+        trigger: 1
+      },
+      {
+        id: "djokovic",
+        message: "Wrong.....Try again",
+        trigger: 1
+      },
+      {
+        id: "federer",
+        message: "You are right I am the King of Tennis",
+        trigger: 2
       },
       {
         id: "2",
@@ -24,7 +41,12 @@ class App extends Component {
     ];
     return (
       <div className="App">
-        <ChatBot placeholder={"Hey there"} botDelay={2500} steps={steps} />
+        <ChatBot
+          headerTitle={"King of Tennis"}
+          placeholder={"Hey there"}
+          botDelay={2500}
+          steps={steps}
+        />
       </div>
     );
   }
