@@ -12,13 +12,19 @@ class App extends Component {
       },
       {
         id: "1",
+        message:
+          "My name is Roger and I am the greatest tennis player of all time",
+        trigger: "2"
+      },
+      {
+        id: "2",
         message: "Bye!",
         end: true
       }
     ];
     return (
       <div className="App">
-        <ChatBot steps={steps} />
+        <ChatBot placeholder={"Hey there"} botDelay={2500} steps={steps} />
       </div>
     );
   }
