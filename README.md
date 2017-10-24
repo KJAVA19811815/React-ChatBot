@@ -19,4 +19,4 @@ This is a simple chatbot which asks you who is the king of tennis.
 !["BOT START"](https://github.com/KJAVA19811815/React-ChatBot/blob/master/DOCS/start.png)
 !["Screenshot of wrong attempt"](https://github.com/KJAVA19811815/React-ChatBot/blob/master/DOCS/wrong.png)
 !["First question"](https://github.com/KJAVA19811815/React-ChatBot/blob/master/DOCS/first.png)
-!["END BOT"](https://github.com/KJAVA19811815/React-ChatBot/blob/master/rename.png)
+!["END BOT"](https://github.com/KJAVA19811815/React-ChatBot/blob/master/DOCS/rename.png)
